@@ -12,7 +12,7 @@ public class ValorServico {
         Scanner teclado = new Scanner(System.in);
         DecimalFormat formatador = new DecimalFormat("#0.00");
         // entrada
-        System.out.println("Cálculo do valor da hora de um srrviço");
+        System.out.println("Cálculo do valor da hora de um serviço");
         System.out.print("Remuneração mensal pretendida: ");
         remuneracao = teclado.nextDouble();
         System.out.print("Custo operacional mensal: ");
@@ -20,7 +20,7 @@ public class ValorServico {
         System.out.print("Carga horária mensal de trabalho: ");
         cargaHoraria = teclado.nextDouble();
         // processamento
-        hora = (remuneracao + (remuneracao * 0.3) + custo + (remuneracao) * 0.2)) / cargaHoraria;
+        hora = (remuneracao + (remuneracao * 0.3) + custo + (remuneracao) * 0.2) / cargaHoraria;
         // saída
         System.out.println("Valor da hora : " + formatador.format(hora));
         teclado.close();
